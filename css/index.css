@@ -309,13 +309,24 @@ header .nav-container a {
   }
 }
 .home .content-pick .destination .btn {
-  display: block;
-  margin: 0 10px 20px;
-  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
   height: 45px;
-  font-size: 2rem;
-  border-radius: 10px;
-  width: 100px;
-  background-color: red;
-  color: white;
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  font-size: 1.8rem;
+  border-radius: 15px;
+  cursor: pointer;
+  border: 1px solid #C0C0C0;
+}
+@media ( max-width: 500px) {
+  .home .content-pick .destination .btn {
+    width: 100%;
+  }
+}
+.home .content-pick .destination .btn:hover {
+  background: #FFFFFF;
+  color: #17A2B8;
 }
