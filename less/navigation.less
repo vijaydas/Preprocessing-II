@@ -1,15 +1,24 @@
 // Navigation Styles here
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 80%;
+    width: 100%;
+    border-bottom: 2px dashed silver;
+    position: sticky;
+    top: 0;
+    background: white;
+    margin: 0 auto;
+    height: 90px;
+     
+    .nav-container {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+        @media @phone {
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 10px;
 
-    nav {
-        margin-left: 60px;
-        margin-top: 25px;
-        margin-bottom: 20px;
-        font-size: 15px;
+        }
 
         a {
             padding:  20px;
